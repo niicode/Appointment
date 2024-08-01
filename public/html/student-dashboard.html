@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reports - Medical Records System</title>
+		<link rel="stylesheet" href="../css/styles.css"">
+	</head>
+	<body>
+		<!-- Include Navigation Bar -->
+		<?php include 'navbar.html'; ?>
+
+		<main>
+			<section class="section">
+				<div class="container">
+					<h2>Other Relevant Information</h2>
+					<form id="report-form" class="form">
+						<div class="form-group">
+							<label for="health-insurance">Health insurance details:</label>
+							<textarea
+								id="health-insurance"
+								name="health-insurance"
+								required
+							></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="medical-representatives"
+								>Authorized medical representatives:</label
+							>
+							<textarea
+								id="medical-representatives"
+								name="medical-representatives"
+								required
+							></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="dietary-needs">Special dietary needs:</label>
+							<textarea
+								id="dietary-needs"
+								name="dietary-needs"
+								required
+							></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="physical-limitations"
+								>Physical limitations or disabilities:</label
+							>
+							<textarea
+								id="physical-limitations"
+								name="physical-limitations"
+								required
+							></textarea>
+						</div>
+
+						<button type="submit" class="btn">Submit</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2024 Medical Records System</p>
+			</div>
+		</footer>
+	</body>
+</html>

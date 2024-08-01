@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Medical Records System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Include Navigation Bar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('/html/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Reports Page</h2>
+                <p>Here you can view and manage reports.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Medical Records System</p>
+        </div>
+    </footer>
+</body>
+</html>

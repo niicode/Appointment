@@ -1,0 +1,20 @@
+function login() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const role = document.getElementById('role').value;
+    const correctPassword = 'password123';  // This should be securely handled in a real application
+
+    console.log('Email:', email);
+    console.log('Password:', password);
+    console.log('Role:', role);
+
+    if (email && password === correctPassword) {
+        if (role === 'admin') {
+            window.location.href = 'admin.html';
+        } else if (role === 'student') {
+            window.location.href = 'students.html';
+        }
+    } else {
+        alert('Invalid email or password');
+    }
+}

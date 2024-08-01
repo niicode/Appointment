@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Interface - Medical Records System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Include Navigation Bar -->
+    <header class="title-header">
+        <div class="container">
+            <h1 class="main-title">Students Medical Records</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="/students">Students</a></li>
+                <li><a href="/appointments">Appointments</a></li>
+                <li><a href="/reports">Reports</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <li>
+                    <a href="/student-dashboard" id="profile-link">Student Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Welcome to the Medical Records System</h2>
+                <p>Use the navigation bar to manage students, appointments, and reports.</p>
+            </div>
+        </section>
+
+        <!-- Student Profile Section (Initially Hidden) -->
+        <section id="student-profile" class="section" style="display: none">
+            <div class="container">
+                <h2>Student Profile</h2>
+                <div class="student-profile">
+                    <img src="/images/student-logo.png" alt="Student Photo" class="student-photo" />
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Student ID:</strong> 123456</p>
+                </div>
+                <a href="/student-management" class="btn">Manage Your Information</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Medical Records System</p>
+        </div>
+    </footer>
+</body>
+</html>

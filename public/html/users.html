@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users - Medical Records System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Include Navigation Bar -->
+    <div id="navbar"></div>
+    <script>
+        fetch('/html/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Medical History</h2>
+                <form id="medical-history-form" class="form">
+                    <div class="form-group">
+                        <label for="chronic-conditions">Chronic conditions:</label>
+                        <textarea id="chronic-conditions" name="chronic-conditions" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="past-illnesses">Past illnesses:</label>
+                        <textarea id="past-illnesses" name="past-illnesses" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="surgeries">Surgeries:</label>
+                        <textarea id="surgeries" name="surgeries" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="medications">Medications:</label>
+                        <textarea id="medications" name="medications" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="immunization-records">Immunization records:</label>
+                        <textarea id="immunization-records" name="immunization-records" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="allergies">Allergies:</label>
+                        <textarea id="allergies" name="allergies" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Medical Records System</p>
+        </div>
+    </footer>
+</body>
+</html>

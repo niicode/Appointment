@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Student Management - Medical Records System</title>
+		<link rel="stylesheet" href="../css/styles.css"">
+	</head>
+	<body>
+		<!-- Include Navigation Bar -->
+		<?php include 'navbar.html'; ?>
+
+		<main>
+			<section class="section">
+				<div class="container">
+					<h2>Student Management</h2>
+
+					<!-- Create and Edit Student Info -->
+					<form id="student-info-form" class="form">
+						<h3>Create/Update Student Info</h3>
+						<div class="form-group">
+							<label for="student-id">Student ID:</label>
+							<input type="text" id="student-id" name="student-id" required />
+						</div>
+						<div class="form-group">
+							<label for="full-name">Full Name:</label>
+							<input type="text" id="full-name" name="full-name" required />
+						</div>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+
+					<!-- Create and Edit Appointments -->
+					<form id="appointment-form" class="form">
+						<h3>Create/Edit Appointment</h3>
+						<div class="form-group">
+							<label for="date">Date:</label>
+							<input type="date" id="date" name="date" required />
+						</div>
+						<div class="form-group">
+							<label for="time">Time:</label>
+							<input type="time" id="time" name="time" required />
+						</div>
+						<div class="form-group">
+							<label for="reason">Reason:</label>
+							<textarea id="reason" name="reason" required></textarea>
+						</div>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+
+					<!-- Create and Fill Reports -->
+					<form id="report-form" class="form">
+						<h3>Create/Fill Report</h3>
+						<div class="form-group">
+							<label for="report-details">Report Details:</label>
+							<textarea
+								id="report-details"
+								name="report-details"
+								required
+							></textarea>
+						</div>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+
+					<!-- View Medical History -->
+					<div id="medical-history" class="form">
+						<h3>Medical History</h3>
+						<p><strong>Medical History:</strong> [Medical History Data Here]</p>
+					</div>
+
+					<!-- Logout -->
+					<a href="logout.html" class="btn">Logout</a>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2024 Medical Records System</p>
+			</div>
+		</footer>
+	</body>
+</html>
